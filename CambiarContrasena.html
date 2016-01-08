@@ -1,0 +1,21 @@
+
+<h2 class="confirmation-title">Cambiar Contraseña</h2>
+<hr />
+<form ng-submit="cambiarContrasena(cambio)">   
+    <div class="ngdialog-message">
+        <div class="form-group">                    
+            <input id="desContrasena" class="form-control" type="password" value="" name="Anterior" ng-model="cambio.anterior" placeholder="Nueva Contraseña">
+        </div>
+        <div class="form-group">                    
+            <input id="desContrasena" class="form-control" type="password" value="" name="Contrasena" ng-model="cambio.contrasena" placeholder="Nueva Contraseña">
+        </div>
+        <div class="form-group">                    
+            <input id="desConfirmacion" class="form-control" type="password" value="" name="Confirmacion" ng-model="cambio.confirmacion" placeholder="Confimación">
+    </div>
+    </div>
+    <div class="ngdialog-buttons">
+         <button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="closeThisDialog()">Salir</button>
+         <!--<button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="confirm(confirmValue)">Cambiar</button>-->
+         <input class="ngdialog-button ngdialog-button-primary" type="submit" value = "Cambiar"/>              
+    </div>  
+</form>
